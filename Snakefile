@@ -22,8 +22,8 @@ rule all:
 # generic rule: compute signature
 rule compute_sig:
     input:
-	"{filename}"
+        "{filename}"
     output:
         "{filename}.sig"
     shell:
-        "sourmash compute -k 31 --scaled=10000 {filename} -o {output}"
+        "sourmash compute -k 31 --scaled=10000 {input} -o {output}"
