@@ -1,0 +1,5 @@
+.snakemake
+*.fna
+*.fa
+*.sig
+*.tar.gz
